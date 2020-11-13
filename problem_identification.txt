@@ -1,0 +1,42 @@
+
+
+porashuna :  
+	akranto howar age ki ki dekhle ekjon k bujhbo shavabik ase
+	body te ki ki changes ashle amra bolte parbo shey akranto
+	google kroe pawa shob resources note korbo
+	
+	
+data store: 
+	study how to store on kafka
+	how to retrive from kafka to android
+
+
+data app e load korar pore:
+	doctor sign in:
+		profile e dhukle thakbe ekta patient er list
+		shekhane patient er vetore dhukle patient er current situation dekhabe (graph akare)
+		time series graph, x->date, y->temparature
+		indicator thakbe ekta, jeita dekhabe patient safe na danger mode e ase, based on data
+		bar diagram thakbe ekta, graph dekhe she compare korte parbe, different colors diye indicate korbo
+		danger mode e gele doctor er ekhan theke notification debe
+		doctor table akare data gula dekhte parbe
+		
+		doctor shob check korar pore oi patient k prescribe korte parbe
+		graph er okhane 2 ta option, add new information, prescribe medicine
+		graph check kore feedback dite parbe
+		
+		
+		
+
+	patient:
+		doctor er list dekhte parbe
+		appoint a doctor (request korbe, doctor apporve kroe nebe)
+		one to many relation (single doctor to multiple patients)
+		form e data entry korbe, or doctor upload kroar pore patient er profile theke nilam, 
+		doctor din e 2-3 bar data upload korbe
+		doctor ke emergency call er bebostha thakbe
+		
+		
+
+playstore e dhuke kisu health app ar kisu health website dekhbo, oikhane ki ki kora hoise, kon kon data show kroano hoise 
+ar eitake aro effective kivabe kora jay
