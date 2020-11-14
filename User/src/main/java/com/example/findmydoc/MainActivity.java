@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import com.example.findmydoc.Doctor.DocDasboard2;
+import com.example.findmydoc.Doctor.SignUpPage;
+
 public class MainActivity extends AppCompatActivity {
 
     Handler handler;
@@ -19,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                startActivity(new Intent(getApplicationContext(),Log_In.class));
+                startActivity(new Intent(getApplicationContext(), DocDasboard2.class));
 
             }
         };

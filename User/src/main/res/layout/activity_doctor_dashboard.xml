@@ -1,9 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Doctor.DoctorDashboard"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Doctor.DoctorDashboard">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    android:orientation="vertical"
+    android:weightSum="7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/pink"
+            android:text="Covid-19 Regulations"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:paddingTop="25dp"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.25">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="reem_kufi"
+            android:paddingLeft="20dp"
+            android:paddingTop="50dp"
+            android:text="1. Do not touch your face\n\n2. Do not stockpile on masks\n\n3. Do not travel unless necessary\n\n4.Sanitize regularly\n\n5. Do not go to crowded places\n\n6. Do not believe everything on the internet\n\n7. Do not seek alternative treatments\n\n8. Do not take antibiotics without the prescription of a doctor\n\n9. Do not propagate hostility against Asians\n\n10. Do not panic"
+            android:textColor="#A56F9A"
+            tools:fontFamily="cursive" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="290dp"
+            android:src="@drawable/ic_sidelogo"
+            android:id="@+id/skip">
+
+        </ImageView>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
