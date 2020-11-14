@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background"
+    android:padding="16dp"
+    tools:context=".EditUser">
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:background="@drawable/edit_background"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:id="@+id/name_eu"
+        android:hint="Name">
+    </EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:background="@drawable/edit_background"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:id="@+id/hospital_eu"
+        android:hint="Hospital">
+    </EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:background="@drawable/edit_background"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:id="@+id/designation_eu"
+        android:hint="Designation">
+    </EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:background="@drawable/edit_background"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:hint="Phone Number"
+        android:inputType="numberDecimal"
+        android:id="@+id/phone_eu">
+    </EditText>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Update"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/teal_700"
+        android:onClick="edit_use"
+        android:textColor="#FFFFFF"
+        >
+    </Button>
+
+
+</LinearLayout>

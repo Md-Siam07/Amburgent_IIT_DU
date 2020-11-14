@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.seller">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +13,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FindMyDoc">
+        <activity android:name=".DeleteDoctorActivity"></activity>
+        <activity android:name=".EditUser" />
+        <activity android:name=".ViewAllDoctors" />
+        <activity android:name=".AddDoctor" />
         <activity android:name=".AdminMainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
