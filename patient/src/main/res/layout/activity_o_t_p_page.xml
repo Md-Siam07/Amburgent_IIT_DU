@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/otp_bgs"
+    android:weightSum="7"
+    android:orientation="vertical"
+    tools:context=".OTP_page">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="please enter the verification code you just recieved:"
+            android:layout_marginLeft="30dp"
+            android:textSize="16sp"
+            android:textColor="#B92E2727"
+            >
+
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <com.goodiebag.pinview.Pinview
+            android:id="@+id/pinview"
+            app:pinBackground="@drawable/ic_pinbox"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:pinWidth="50dp"
+            app:pinHeight="50dp"
+            app:pinLength="6"
+            app:splitWidth="8dp"
+            android:layout_gravity="center"
+            app:textSize="8sp"
+            app:cursorVisible="true"
+            app:hint="0"
+            app:inputType="number"
+            app:password="false"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_didntgetcode"
+            android:layout_marginLeft="240dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="17dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:layout_gravity="center">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:backgroundTint="@color/pink"
+            android:layout_marginLeft="130dp"
+            android:layout_marginRight="120dp"
+            android:text="VERIFY"
+            android:layout_marginTop="10dp"
+            android:onClick="verify"
+            />
+
+
+
+
+</LinearLayout>
+</LinearLayout>
