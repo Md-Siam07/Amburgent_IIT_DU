@@ -1,4 +1,4 @@
-package com.example.findmydoc;
+package com.example.findmydoc.Doctor;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.findmydoc.UserTypeChooser;
+import com.example.findmydoc.R;
 import com.goodiebag.pinview.Pinview;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -100,7 +102,7 @@ public class OTP_page extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
 
-                            Intent intent   =   new Intent(getApplicationContext(),MainActivity2.class);
+                            Intent intent   =   new Intent(getApplicationContext(), UserTypeChooser.class);
                             startActivity(intent);
                             finish();
 

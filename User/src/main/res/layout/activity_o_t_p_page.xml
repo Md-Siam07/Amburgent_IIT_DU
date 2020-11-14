@@ -7,7 +7,7 @@
     android:background="@drawable/otp_bgs"
     android:weightSum="7"
     android:orientation="vertical"
-    tools:context=".OTP_page">
+    tools:context=".Doctor.OTP_page">
 
 
     <LinearLayout

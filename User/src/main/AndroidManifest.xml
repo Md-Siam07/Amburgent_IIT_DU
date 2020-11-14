@@ -9,10 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FindMyDoc">
-        <activity android:name=".MainActivity2"></activity>
-        <activity android:name=".OTP_page" />
-        <activity android:name=".SignUpPage" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Awareness"></activity>
+        <activity android:name=".Patient.PatientDashboard" />
+        <activity android:name=".Doctor.DoctorDashboard" />
+        <activity android:name=".UserTypeChooser" />
+        <activity android:name=".Doctor.OTP_page" />
+        <activity
+            android:theme="@style/fullscreen"
+            android:name=".Doctor.SignUpPage" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

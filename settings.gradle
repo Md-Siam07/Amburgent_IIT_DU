@@ -1,4 +1,4 @@
 include ':common'
 include ':admin'
-include ':patient'
+include ':User'
 rootProject.name = "FindMyDoc"
