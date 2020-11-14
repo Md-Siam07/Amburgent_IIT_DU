@@ -68,7 +68,7 @@ public class ViewAllDoctors extends AppCompatActivity {
         });
     }
 
-    public class RecycleAdapter extends RecyclerView.Adapter<RecycleAdapter.ViewAdapter> {
+    public static class RecycleAdapter extends RecyclerView.Adapter<RecycleAdapter.ViewAdapter> {
         ArrayList<User> users;
 
         public RecycleAdapter(ArrayList<User> users) {

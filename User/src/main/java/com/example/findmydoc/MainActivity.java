@@ -8,6 +8,7 @@ import android.os.Handler;
 
 import com.example.findmydoc.Doctor.DocDasboard2;
 import com.example.findmydoc.Doctor.SignUpPage;
+import com.example.findmydoc.Patient.PatientDashboard;
 
 public class MainActivity extends AppCompatActivity {
 

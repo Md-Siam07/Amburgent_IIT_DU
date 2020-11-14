@@ -16,20 +16,20 @@
         android:id="@+id/tool_bar"
         android:background="#A1FA51CF"
         >
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            >
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/ic_nav"
-                >
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center_vertical"-->
+<!--            >-->
+<!--            <ImageView-->
+<!--                android:layout_width="40dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:src="@drawable/ic_nav"-->
+<!--                >-->
 
-            </ImageView>
+<!--            </ImageView>-->
 
-        </LinearLayout>
+<!--        </LinearLayout>-->
 
 
 

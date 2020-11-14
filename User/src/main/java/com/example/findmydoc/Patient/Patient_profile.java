@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.example.findmydoc.R;
 
-public class PatientDashboard extends AppCompatActivity {
+public class Patient_profile extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.nav_patient);
+        setContentView(R.layout.activity_patient_profile);
     }
 }

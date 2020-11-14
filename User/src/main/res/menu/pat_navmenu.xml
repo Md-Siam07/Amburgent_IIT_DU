@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/profile_pat"
+        android:checkableBehavior="single">
+        <item android:id="@+id/prof_pat_item"
+            android:icon="@drawable/ic_profile_iconprof"
+            android:title="Profile"
+            >
+
+        </item>
+    </group>
+
+    <group android:id="@+id/doc_list"
+        android:checkableBehavior="single">
+        <item android:id="@+id/doctors"
+            android:icon="@drawable/ic_doc_icon"
+            android:title="Doctors' List"
+            >
+
+        </item>
+    </group>
+
+
+
+    <group android:id="@+id/articles_pat"
+        android:checkableBehavior="single">
+        <item android:id="@+id/article_pat"
+            android:icon="@drawable/ic_baseline_article_24"
+            android:title="Articles"
+            >
+
+        </item>
+    </group>
+
+
+    <group android:id="@+id/pres"
+        android:checkableBehavior="single">
+        <item android:id="@+id/prescription"
+            android:icon="@drawable/ic_baseline_description_24"
+            android:title="Prescription"
+            >
+
+        </item>
+    </group>
+</menu>
