@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/profile"
+        android:checkableBehavior="single">
+        <item android:id="@+id/prof_item"
+            android:icon="@drawable/ic_profile_iconprof"
+            android:title="Profile"
+            >
+
+        </item>
+    </group>
+
+    <group android:id="@+id/patients"
+        android:checkableBehavior="single">
+        <item android:id="@+id/my_patient"
+            android:icon="@drawable/ic_patient"
+            android:title="My Patients"
+            >
+
+        </item>
+    </group>
+
+    <group android:id="@+id/pending_req"
+        android:checkableBehavior="single">
+        <item android:id="@+id/pending"
+            android:icon="@drawable/ic_pending"
+            android:title="Pending Requests"
+            >
+
+        </item>
+    </group>
+
+    <group android:id="@+id/articles"
+        android:checkableBehavior="single">
+        <item android:id="@+id/article"
+            android:icon="@drawable/ic_baseline_article_24"
+            android:title="Articles"
+            >
+
+        </item>
+    </group>
+
+</menu>

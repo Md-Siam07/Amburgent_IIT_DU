@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Doctor.DocDasboard2"
+    android:orientation="vertical"
+    android:weightSum="7">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/tool_bar"
+        android:background="#A1FA51CF"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_nav"
+                >
+
+            </ImageView>
+
+        </LinearLayout>
+
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dectorsview"
+        />
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="@drawable/bgs"-->
+
+<!--       >-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/ic_welcomedoc"-->
+<!--            android:layout_marginTop="320dp"-->
+<!--            android:layout_marginRight="30dp"-->
+<!--            android:layout_marginLeft="30dp"/>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="400dp"-->
+<!--            android:layout_marginRight="30dp"-->
+<!--            android:layout_marginLeft="30dp"-->
+<!--            android:text="You have:"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold"-->
+<!--           android:paddingLeft="140dp"-->
+<!--            android:textColor="@color/black"/>-->
+
+<!--        <EditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/ic_dash1"-->
+<!--            android:layout_marginTop="450dp"-->
+<!--            android:layout_marginRight="250dp"-->
+<!--            android:layout_marginLeft="50dp"-->
+<!--            android:hint="14"-->
+<!--            android:textColorHint="@color/pink"-->
+<!--            android:textSize="60sp"-->
+<!--            android:textAlignment="center"-->
+<!--            />-->
+
+<!--        <EditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/ic_helped_reco"-->
+<!--            android:layout_marginTop="450dp"-->
+<!--            android:layout_marginLeft="240dp"-->
+<!--            android:layout_marginRight="60dp"-->
+<!--            android:hint="76"-->
+<!--            android:textColorHint="@color/pink"-->
+<!--            android:textSize="60sp"-->
+<!--            android:textAlignment="center"/>-->
+
+
+
+<!--    </RelativeLayout>-->
+
+</LinearLayout>
