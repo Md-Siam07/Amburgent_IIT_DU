@@ -8,8 +8,6 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.common.test;
-
 public class AdminMainActivity extends AppCompatActivity {
 
 

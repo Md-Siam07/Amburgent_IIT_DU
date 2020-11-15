@@ -33,7 +33,7 @@ public class DoctorHomePanel extends Fragment {
 
 
     private static final int MAX_X_VALUE =4;
-    private static final int MAX_Y_VALUE = 30;
+    private static final int MAX_Y_VALUE = 17112;
     private static final int MIN_Y_VALUE = 5;
     private static final int GROUPS = 4;
     private static final String TEST = "Test";
@@ -43,7 +43,7 @@ public class DoctorHomePanel extends Fragment {
     private static final float BAR_SPACE = 0.05f;
     private static final float BAR_WIDTH = 0.14f;
     private BarChart chart;
-    private static final String[] DAYS = { "SUN", "MON", "TUE", "WED","Thu"};
+    private static final String[] DAYS = { "11 Nov", "12 Nov", "13 Nov", "14 Nov","Thu"};
     PieChart pieChart;
     PieData pieData;
     PieDataSet pieDataSet;
@@ -131,10 +131,10 @@ public class DoctorHomePanel extends Fragment {
     }
     private void getEntries() {
         pieEntries = new ArrayList<>();
-        pieEntries.add(new PieEntry(2, "Test"));
-        pieEntries.add(new PieEntry(4, "Infected"));
-        pieEntries.add(new PieEntry(6, "Cure"));
-        pieEntries.add(new PieEntry(8, "Death"));
+        pieEntries.add(new PieEntry(2527134, "Test"));
+        pieEntries.add(new PieEntry(430496, "Infected"));
+        pieEntries.add(new PieEntry(347849, "Cure"));
+        pieEntries.add(new PieEntry(6173, "Death"));
     }
 
     private BarData createChartData() {
@@ -144,12 +144,27 @@ public class DoctorHomePanel extends Fragment {
         ArrayList<BarEntry> values3 = new ArrayList<>();
         ArrayList<BarEntry> values4 = new ArrayList<>();
 
-        for (int i = 0; i < MAX_X_VALUE; i++) {
-            values1.add(new BarEntry((i),(int)((Math.random() * (MAX_Y_VALUE - MIN_Y_VALUE)) + MIN_Y_VALUE)));
-            values2.add(new BarEntry((i), (int)((Math.random() * (MAX_Y_VALUE - MIN_Y_VALUE)) + MIN_Y_VALUE)));
-            values3.add(new BarEntry((i), (int)((Math.random() * (MAX_Y_VALUE - MIN_Y_VALUE)) + MIN_Y_VALUE)));
-            values4.add(new BarEntry((i), (int)((Math.random() * (MAX_Y_VALUE - MIN_Y_VALUE)) + MIN_Y_VALUE)));
-        }
+        values1.add(new BarEntry((0),14524));
+        values2.add(new BarEntry((0),1733));
+        values3.add(new BarEntry((0), 1715));
+        values4.add(new BarEntry((0),19));
+
+
+        values1.add(new BarEntry((1),17112));
+        values2.add(new BarEntry((1),1845));
+        values3.add(new BarEntry((1), 1715));
+        values4.add(new BarEntry((1),13));
+
+
+        values1.add(new BarEntry((2),13549));
+        values2.add(new BarEntry((2),1767));
+        values3.add(new BarEntry((2),1519 ));
+        values4.add(new BarEntry((2),19));
+
+        values1.add(new BarEntry((3),11795));
+        values2.add(new BarEntry((3),1531));
+        values3.add(new BarEntry((3), 1462));
+        values4.add(new BarEntry((3),14));
 
         BarDataSet set1 = new BarDataSet(values1, TEST);
         BarDataSet set2 = new BarDataSet(values2, INFECT);

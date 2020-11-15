@@ -106,7 +106,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
                                 <TextView
-                                    android:text="1000"
+                                    android:text="2527134"
                                     android:background="@drawable/border_top_only"
                                     android:layout_weight="1"
                                     android:gravity="center"
@@ -116,7 +116,7 @@
                                     android:layout_height="0dp">
                                 </TextView>
                                 <TextView
-                                    android:text="500"
+                                    android:text="430,496"
                                     android:layout_weight="1"
                                     android:gravity="center"
                                     android:backgroundTint="@color/yellow"
@@ -126,7 +126,7 @@
                                     android:layout_height="0dp">
                                 </TextView>
                                 <TextView
-                                    android:text="300"
+                                    android:text="347849"
                                     android:layout_weight="1"
                                     android:gravity="center"
                                     android:backgroundTint="@color/green"
@@ -136,7 +136,7 @@
                                     android:layout_height="0dp">
                                 </TextView>
                                 <TextView
-                                    android:text="100"
+                                    android:text="6173"
                                     android:layout_weight="1"
                                     android:gravity="center"
                                     android:backgroundTint="@color/red"
@@ -166,6 +166,14 @@
                         android:background="@color/white"
                         android:layout_height="match_parent" />
                 </LinearLayout>
+                <TextView
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="Data Collected Form : https://corona.gov.bd/"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                </TextView>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
