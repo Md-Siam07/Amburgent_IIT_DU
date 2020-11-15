@@ -19,7 +19,7 @@ public class UserTypeChooser extends AppCompatActivity {
 
     public void doctor(View view)
     {
-        Intent tnt=new Intent(getApplicationContext(), DoctorDashboard.class);
+        Intent tnt=new Intent(getApplicationContext(), SignUpPage.class);
         tnt.putExtra("user_type","doctor");
         startActivity(tnt);
     }

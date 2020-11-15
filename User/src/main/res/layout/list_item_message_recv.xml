@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/oponent_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/oponent_profile_pic"
+            android:src="@drawable/profile10"
+            android:layout_marginLeft="7dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:id="@+id/user_name"
+            android:text="admin"
+            android:gravity="center|top"
+            android:textSize="12sp"
+            android:layout_below="@id/oponent_profile_pic"
+            android:layout_width="45dp"
+            android:layout_height="20dp">
+        </TextView>
+
+        <com.github.library.bubbleview.BubbleTextView
+            android:layout_marginStart="15dp"
+            android:id="@+id/oponent_message_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/oponent_profile_pic"
+            android:padding="10dp"
+            android:textColor="#FDFCFC"
+            android:textSize="16sp"
+            app:angle="8dp"
+            app:arrowCenter="true"
+            app:arrowHeight="10dp"
+            app:arrowLocation="left"
+            app:arrowPosition="14dp"
+            app:arrowWidth="8dp"
+            app:bubbleColor="#743106" />
+
+        <ImageView
+            android:id="@+id/oponent_reat"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/oponent_profile_pic"
+            />
+        <TextView
+            android:id="@+id/oponent_time"
+            android:text="12:00"
+            android:gravity="center|top"
+            android:textSize="12sp"
+            android:layout_marginStart="20dp"
+            android:layout_below="@id/oponent_reat"
+            android:layout_alignStart="@id/oponent_reat"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_height="20dp">
+        </TextView>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_layout"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/profile10"
+            android:id="@+id/my_profile_pic"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <com.github.library.bubbleview.BubbleTextView
+            android:id="@+id/my_message_view"
+            android:layout_marginEnd="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/my_profile_pic"
+            android:padding="10dp"
+            android:textColor="#FCFCFC"
+            android:textSize="16sp"
+            app:angle="8dp"
+            app:arrowCenter="true"
+            app:arrowHeight="10dp"
+            app:arrowLocation="right"
+            app:arrowPosition="14dp"
+            app:arrowWidth="8dp"
+            app:bubbleColor="#5F04A2" />
+
+        <ImageView
+            android:layout_marginEnd="10dp"
+            android:id="@+id/my_react"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/my_profile_pic"
+            />
+        <TextView
+            android:id="@+id/my_time"
+            android:text="12:00"
+            android:gravity="center|top"
+            android:textSize="12sp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@id/my_react"
+            android:layout_alignEnd="@id/my_react"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_height="20dp">
+        </TextView>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

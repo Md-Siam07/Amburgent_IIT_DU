@@ -98,6 +98,13 @@ public class DoctorDashboard extends AppCompatActivity implements NavigationView
             changeFragmentView(fragment);
 
         }
+        else if (id == R.id.pending) {
+
+            title.setText("Patient Request");
+            fragment=new AppointmentRequest();
+            changeFragmentView(fragment);
+
+        }
 
 
         return true;

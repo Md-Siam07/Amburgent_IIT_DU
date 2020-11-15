@@ -33,7 +33,7 @@
             android:layout_height="match_parent">
         </View>
         <LinearLayout
-            android:layout_weight="1.9"
+            android:layout_weight="1.8"
             android:layout_width="0dp"
             android:orientation="vertical"
             android:weightSum="3"
@@ -118,7 +118,7 @@
             android:layout_height="match_parent">
         </View>
         <LinearLayout
-            android:layout_weight="1.1"
+            android:layout_weight="1.2"
             android:orientation="vertical"
             android:layout_width="0dp"
             android:padding="6dp"
@@ -131,6 +131,7 @@
                 android:layout_height="0dp"
                 android:layout_marginBottom="5dp"
                 android:layout_weight="1"
+                android:textSize="14sp"
                 android:background="@drawable/editback2"
                 android:backgroundTint="@color/coffe"
                 android:text="Appoint"

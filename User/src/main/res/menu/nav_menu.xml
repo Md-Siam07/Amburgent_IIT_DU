@@ -33,7 +33,7 @@
         android:checkableBehavior="single">
         <item android:id="@+id/pending"
             android:icon="@drawable/ic_pending"
-            android:title="Pending Requests"
+            android:title="Patient Requests"
             >
 
         </item>

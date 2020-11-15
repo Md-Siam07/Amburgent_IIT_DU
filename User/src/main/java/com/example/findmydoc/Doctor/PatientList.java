@@ -11,11 +11,13 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.findmydoc.Messenger;
 import com.example.findmydoc.Patient_Model;
 import com.example.findmydoc.R;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -53,7 +55,7 @@ public class PatientList extends Fragment {
     FirebaseAuth firebaseAuth=FirebaseAuth.getInstance();
     FirebaseFirestore db=FirebaseFirestore.getInstance();
     FirebaseUser firebaseUser;
-    String user_id;
+    String user_id="";
     public PatientList() {
         // Required empty public constructor
     }
@@ -69,17 +71,20 @@ public class PatientList extends Fragment {
         progressDialog.setMessage("Please wait...");
         no_item=view.findViewById(R.id.no_item);
         firebaseUser=firebaseAuth.getCurrentUser();
-        user_id=firebaseUser.getUid();
+        if(firebaseUser!=null) user_id=firebaseUser.getUid();
         recycleAdapter=new RecycleAdapter(memberInfos);
+        recyclerView.setAdapter(recycleAdapter);
         getAllPatient();
         return view;
     }
     public void getAllPatient(){
+        progressDialog.show();
         Query query= db.collection("users");//.whereEqualTo("appoint_doctor_id",user_id);
         query.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
             @Override
             public void onComplete(@NonNull Task<QuerySnapshot> task) {
 
+                progressDialog.dismiss();
                 QuerySnapshot queryDocumentSnapshot=task.getResult();
                 if(queryDocumentSnapshot.size()>0){
                     for(QueryDocumentSnapshot queryDocumentSnapshot1:queryDocumentSnapshot){
@@ -91,7 +96,7 @@ public class PatientList extends Fragment {
                         String device_id="";
                         if(queryDocumentSnapshot1.contains("user_id")) user_id=queryDocumentSnapshot1.get("user_id").toString();
                         if(queryDocumentSnapshot1.contains("user_name")) user_name=queryDocumentSnapshot1.get("user_name").toString();
-                        if(queryDocumentSnapshot1.contains("phone_number")) phone_number=queryDocumentSnapshot1.get("phone_number").toString();
+                        if(queryDocumentSnapshot1.contains("phone_no")) phone_number=queryDocumentSnapshot1.get("phone_no").toString();
                         if(queryDocumentSnapshot1.contains("age")) age=queryDocumentSnapshot1.get("age").toString();
                         if(queryDocumentSnapshot1.contains("image_path")) image_path=queryDocumentSnapshot1.get("image_path").toString();
                         if(queryDocumentSnapshot1.contains("device_id")) device_id=queryDocumentSnapshot1.get("device_id").toString();
@@ -159,20 +164,33 @@ public class PatientList extends Fragment {
 
                 Picasso.get().load(memberInfo.image_path).placeholder(R.drawable.profile10).into(holder.profile_image);
             }
-
+            holder.accept.setText("Health");
             holder.accept.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
 
+                    Intent intent=new Intent(getContext(),PatientHealth.class);
+                    intent.putExtra("user_id",memberInfo.id);
+                    startActivity(intent);
 
                 }
             });
-
+            holder.cancel.setText("Contact");
             holder.cancel.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
 
-
+                    Intent intent=new Intent(getContext(), Messenger.class);
+                    intent.putExtra("sender_id",user_id);
+                    intent.putExtra("receiver_id",memberInfo.id);
+                    intent.putExtra("sender_type","doctor");
+                    intent.putExtra("notification_id","");
+                    intent.putExtra("receiver_type","patient");
+                    intent.putExtra("sender_device_id","");
+                    intent.putExtra("sender_device_id","");
+                    intent.putExtra("receiver_device_id",memberInfo.device_id);
+                    intent.putExtra("duplicate",false);
+                    startActivity(intent);
                 }
             });
 

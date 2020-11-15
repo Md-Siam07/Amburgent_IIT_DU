@@ -28,11 +28,12 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 FirebaseUser firebaseUser=firebaseAuth.getCurrentUser();
                 if(firebaseUser==null){
-                    startActivity(new Intent(getApplicationContext(),DoctorDashboard.class));
+                    startActivity(new Intent(getApplicationContext(),UserTypeChooser.class));
                 }
                 else{
                     startActivity(new Intent(getApplicationContext(), DoctorDashboard.class));
                 }
+                finish();
 
 
             }
