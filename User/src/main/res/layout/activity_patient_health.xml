@@ -152,7 +152,7 @@
                                     android:text="98 degree"
                                     android:layout_weight="1"
                                     android:gravity="center"
-                                    android:backgroundTint="@color/yellow"
+                                    android:backgroundTint="#F0A86909"
                                     android:textColor="@color/white"
                                     android:background="@drawable/border_top_only"
                                     android:layout_width="match_parent"
@@ -162,7 +162,7 @@
                                     android:text="347849"
                                     android:layout_weight="1"
                                     android:gravity="center"
-                                    android:backgroundTint="@color/green"
+                                    android:backgroundTint="#0F9F11"
                                     android:textColor="@color/white"
                                     android:background="@drawable/border_top_only"
                                     android:layout_width="match_parent"
@@ -202,9 +202,25 @@
                     android:orientation="horizontal"
                     android:layout_marginTop="30dp"
                     android:layout_width="match_parent"
-                    android:layout_height="300dp">
+                    android:layout_height="240dp">
                     <com.github.mikephil.charting.charts.LineChart
                         android:id="@+id/chart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <View
+                    android:background="#79CDCDCD"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp">
+                </View>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_height="240dp">
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:id="@+id/temperature"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent" />
                 </LinearLayout>
