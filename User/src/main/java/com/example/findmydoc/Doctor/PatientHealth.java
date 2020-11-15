@@ -2,7 +2,10 @@ package com.example.findmydoc.Doctor;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import com.example.findmydoc.R;
 import com.github.mikephil.charting.charts.LineChart;
@@ -19,6 +22,7 @@ public class PatientHealth extends AppCompatActivity {
 
     LineChart mLineChart,tmp;
     Random random;
+    Button prescription;
     private static final String[] DAYS = { "1 Nov", "2 Nov", "3 Nov", "4 Nov","5 Thu", "6 Nov", "7 Nov", "8 Nov", "9 Nov","10 Thu", "11 Nov", "12 Nov", "13 Nov", "14 Nov","15 Thu"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +30,15 @@ public class PatientHealth extends AppCompatActivity {
         setContentView(R.layout.activity_patient_health);
         mLineChart=findViewById(R.id.chart);
         tmp=findViewById(R.id.temperature);
+        prescription=findViewById(R.id.prescription);
+        prescription.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),WritePrescription.class);
+                intent.putExtra("user_id","");
+                startActivity(intent);
+            }
+        });
         random=new Random();
         createTimeSeries();
     }

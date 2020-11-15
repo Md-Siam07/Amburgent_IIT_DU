@@ -13,14 +13,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FindMyDoc">
-        <activity android:name=".Doctor.PatientHealth"></activity>
+        <activity android:name=".Doctor.WritePrescription"></activity>
+        <activity android:name=".Doctor.PatientHealth" />
         <activity android:name=".Doctor.navBar" />
         <activity android:name=".Doctor.DoctorDashboard" />
         <activity android:name=".Patient.showDoctorList" />
         <activity android:name=".Patient.Form" />
         <activity android:name=".Patient.Patient_profile" />
         <activity android:name=".Doctor.Doctor_Profile" />
-        <activity android:name=".Messenger"/>
+        <activity android:name=".Messenger" />
         <activity android:name=".Awareness" />
         <activity android:name=".Patient.PatientDashboard" />
         <activity android:name=".UserTypeChooser" />

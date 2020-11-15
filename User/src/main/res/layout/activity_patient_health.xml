@@ -19,10 +19,10 @@
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="200dp">
+                    android:layout_height="210dp">
                     <LinearLayout
                         android:layout_weight="1"
-                        android:padding="10dp"
+                        android:padding="5dp"
                         android:layout_width="0dp"
                         android:gravity="center"
                         android:orientation="vertical"
@@ -50,6 +50,13 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
                         </TextView>
+                        <Button
+                            android:id="@+id/prescription"
+                            android:text="Give Prescription"
+                            android:textAllCaps="false"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content">
+                        </Button>
                     </LinearLayout>
                     <View
                         android:background="#79CDCDCD"
@@ -215,7 +222,7 @@
                 </View>
                 <LinearLayout
                     android:orientation="horizontal"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="15dp"
                     android:layout_width="match_parent"
                     android:layout_marginBottom="20dp"
                     android:layout_height="240dp">
