@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import com.example.findmydoc.Doctor.DoctorDashboard;
+import com.example.findmydoc.Doctor.PatientHealth;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(new Intent(getApplicationContext(),UserTypeChooser.class));
                 }
                 else{
-                    startActivity(new Intent(getApplicationContext(), DoctorDashboard.class));
+                    startActivity(new Intent(getApplicationContext(), PatientHealth.class));
                 }
                 finish();
 
