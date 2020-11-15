@@ -13,6 +13,10 @@
         android:theme="@style/Theme.FindMyDoc">
         <activity android:name=".Doctor.navBar"></activity>
         <activity android:name=".Doctor.DoctorDashboard" />
+        <activity android:name=".Patient.showDoctorList"></activity>
+        <activity android:name=".Patient.Form" />
+        <activity android:name=".Patient.Patient_profile" />
+        <activity android:name=".Doctor.Doctor_Profile" />
         <activity android:name=".Awareness" />
         <activity android:name=".Patient.PatientDashboard" />
         <activity android:name=".UserTypeChooser" />
