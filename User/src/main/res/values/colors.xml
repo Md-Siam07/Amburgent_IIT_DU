@@ -9,4 +9,11 @@
     <color name="white">#FFFFFFFF</color>
     <color name="pink">#F569C0</color>
     <color name="dark_pink">#E431A1</color>
+    <color name="dark_yellow">#803003</color>
+    <color name="gray">#C8434343</color>
+    <color name="red">#C8F32020</color>
+    <color name="green">#C81AD612</color>
+    <color name="yellow">#C8DDC117</color>
+    <color name="blue">#C81485DC</color>
+    <color name="coffe">#3E2723</color>
 </resources>

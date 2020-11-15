@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:elevation="10dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="15dp"
+    android:layout_height="120dp">
+
+
+    <LinearLayout
+        android:id="@+id/view_profile"
+        android:weightSum="4"
+        android:padding="6dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_pic"
+            android:src="@drawable/profile10"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </de.hdodenhof.circleimageview.CircleImageView>
+        <View
+            android:layout_margin="6dp"
+            android:layout_width="1sp"
+            android:background="#99BDAFAF"
+            android:layout_height="match_parent">
+        </View>
+        <LinearLayout
+            android:layout_weight="1.9"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:weightSum="3"
+            android:layout_marginLeft="6dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/name"
+                android:text="Principal name"
+                android:textColor="@color/coffe"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp">
+
+                <TextView
+                    android:text="Age :"
+                    android:gravity="center"
+                    android:textColor="#430983"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/age"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="School Name"
+                    android:paddingLeft="10dp"
+                    android:layout_width="0dp"
+                    android:singleLine="true"
+                    android:textColor="#161515"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:layout_height="match_parent">
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp">
+
+                <TextView
+                    android:text="Phn :"
+                    android:textColor="#430983"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/phone_number"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="School Name"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:textColor="#161515"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:paddingLeft="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                </TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:layout_margin="6dp"
+            android:layout_width="1sp"
+            android:background="#99BDAFAF"
+            android:layout_height="match_parent">
+        </View>
+        <LinearLayout
+            android:layout_weight="1.1"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:padding="6dp"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/appoint"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/editback2"
+                android:backgroundTint="@color/coffe"
+                android:text="Appoint"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FFFFFF">
+
+            </Button>
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/editback2"
+                android:backgroundTint="#430983"
+                android:fontFamily="sans-serif"
+                android:text="Cancel"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FFFFFF">
+
+            </Button>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,4 +1,3 @@
-include ':common'
 include ':admin'
 include ':User'
 rootProject.name = "FindMyDoc"

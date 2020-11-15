@@ -57,14 +57,26 @@
 
         >
 
-        <ImageView
+        <RelativeLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="290dp"
-            android:src="@drawable/ic_sidelogo"
+            android:gravity="bottom"
+            android:paddingBottom="30dp"
+            android:paddingEnd="30dp"
+            android:background="@drawable/ic_sidelogo"
             android:id="@+id/skip">
-
-        </ImageView>
+            <Button
+                android:onClick="skip"
+                app:backgroundTint="@null"
+                android:background="@android:color/transparent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="50dp"
+                android:layout_height="48dp">
+            </Button>
+        </RelativeLayout>
 
 
     </LinearLayout>

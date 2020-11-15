@@ -15,6 +15,51 @@
       },
       "oauth_client": [
         {
+          "client_id": "298019365278-j3c0ag2idcrb8sgqhpau37reaf6k67aj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.admin",
+            "certificate_hash": "37084c1f96202f8857e9d9fdb16635b7dea67932"
+          }
+        },
+        {
+          "client_id": "298019365278-r76lfpq8uvqfogk8ej0nsrj007ksq0np.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.admin",
+            "certificate_hash": "b891749d7633a84d77d481f2b7ec44359782c8a4"
+          }
+        },
+        {
+          "client_id": "298019365278-akdtvoncce767plol610u0ba2n9hmdf1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6XJBLj30mzW6JR6aQ7dbJohnGEgyW_fs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "298019365278-akdtvoncce767plol610u0ba2n9hmdf1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298019365278:android:62ce7b2105f9a97efc768f",
+        "android_client_info": {
+          "package_name": "com.example.findmydoc"
+        }
+      },
+      "oauth_client": [
+        {
           "client_id": "298019365278-akdtvoncce767plol610u0ba2n9hmdf1.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -43,6 +88,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "298019365278-os39me4uvt94opdog2nvptik50eo94nc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.seller",
+            "certificate_hash": "37084c1f96202f8857e9d9fdb16635b7dea67932"
+          }
+        },
         {
           "client_id": "298019365278-akdtvoncce767plol610u0ba2n9hmdf1.apps.googleusercontent.com",
           "client_type": 3
